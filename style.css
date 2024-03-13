@@ -1,0 +1,154 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat-alternates');
+body{
+ font-family: "Montserrat Alternates", sans-serif;
+ background-color: #F7EDE8;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top:40px;
+    left: 0;
+}
+.header_menu{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    display: flex;
+    width: 337px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header_link_radio > input, .content_header_link {
+    display: none;
+    font-size: 10px;
+    font-weight: 200;
+    background-color: white;
+}
+.header_link_radio > .header_link::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    margin-left: 10px;
+    top: 3px;
+    background-image: url('img/check.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.header_link_radio > input:checked ~ .content_header_link{
+    display: block;
+}
+.header_link{
+    display: block;
+}
+.header_link:hover{
+    color: #CD4631;
+    cursor: pointer;
+}
+#header_button_1, #header_button_2{
+    display: none;
+}
+.header_buttons > label{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-left: 10px;
+}
+.your_daily_podcast > label{
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 24px 48px 24px 48px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.07px;
+    margin-left: 10px;
+}
+.header_buttons > label:hover, .your_daily_podcast > label:hover{
+    background-color: black;
+    color: white;
+}
+.your_daily_podcast{
+    max-width: 600px;
+    margin: 160px auto auto auto;
+    text-align: center;
+}
+.your_daily_podcast_caps >span{
+    color: #CD4631;
+}
+.your_daily_podcast_caps{
+    font-size: 96px;
+    font-weight: 700;
+}
+.your_daily_podcast_text{
+    font-size: 16px;
+    max-width: 300px;
+    text-align: center;
+    margin: 52px auto 52px auto;
+}
+
+
+
+
+.wrapper_toch{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 373px; 
+    margin-top: 100px;
+}
+.wrapper_toch::-webkit-scrollbar {
+    display: none;
+}
+.slide{
+    width: 373px;
+    height: 373px;
+    border-radius: 12px;
+    display: inline-block;
+    background-position: center;
+    background-size: 100%;
+    -webkit-filter: grayscale(100%);
+}
+#slide_1{
+    background-image: url(img/slide_1.jpg);
+}
+#slide_2{
+    background-image: url(img/slide_2.jpg);
+    background-position: 75% 25%;
+}
+#slide_3{
+    background-image: url(img/slide_3.jpg);
+    
+}
+#slide_4{
+    background-image: url(img/slide_4.jpg);
+    background-size: 160%;
+    background-position: center top;
+}
+#slide_5{
+    background-image: url(img/slide_5.jpg);
+    background-position:  center top -60px ;
+    background-size: 100%;
+}
