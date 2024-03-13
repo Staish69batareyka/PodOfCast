@@ -10,12 +10,12 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    
     position: absolute;
     top:40px;
-    left: 0;
+    left: 170px;
+    right: 170px;
+    
 }
 .header_menu{
     font-size: 16px;
@@ -23,8 +23,9 @@ header{
     line-height: 25.6px;
     display: flex;
     width: 337px;
+    padding-top: 30px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
 }
 .header_link_radio > input, .content_header_link {
     display: none;
@@ -59,6 +60,9 @@ header{
 }
 #header_button_1, #header_button_2{
     display: none;
+}
+.header_buttons{
+    padding-top: 20px;
 }
 .header_buttons > label{
     display: inline-block;
@@ -95,6 +99,20 @@ header{
     margin: 160px auto auto auto;
     text-align: center;
 }
+.svg_1{
+    position: absolute;
+    left: 0;
+}
+#svg_1_star{
+    position: absolute;
+    top: 210px;
+    left: 270px;
+}
+.svg_2{
+    position: absolute;
+    right: 0;
+    top: 100px
+}
 .your_daily_podcast_caps >span{
     color: #CD4631;
 }
@@ -122,17 +140,25 @@ header{
 .wrapper_toch::-webkit-scrollbar {
     display: none;
 }
-.slide{
+.wrapper{
     width: 373px;
     height: 373px;
-    border-radius: 12px;
+    position: relative;
     display: inline-block;
+    margin-left: 20px;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
     background-position: center;
     background-size: 100%;
     -webkit-filter: grayscale(100%);
+    
 }
 #slide_1{
     background-image: url(img/slide_1.jpg);
+    margin-left: 0;
 }
 #slide_2{
     background-image: url(img/slide_2.jpg);
@@ -151,4 +177,25 @@ header{
     background-image: url(img/slide_5.jpg);
     background-position:  center top -60px ;
     background-size: 100%;
+}
+.text_slide{
+    position: absolute;
+    bottom: 15px;
+    left: 17px;
+    font-size: 37px;
+    font-weight: 700;
+    color: #81ADC8;
+}
+.slide_icons{
+    position: absolute;
+    top:20px;
+    right: 15px;
+    height: 24px;
+    width: 100px;
+    display: inline-block;
+}
+.slide_icon_1, .slide_icon_2, .slide_icon_3{
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
 }
